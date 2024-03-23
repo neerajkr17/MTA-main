@@ -1,0 +1,14 @@
+.sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 100%;
+    background: #4f2cd4;
+    transition: width 0.4s;
+}
+
+.sidebar.open {
+    width: 260px;
+}
