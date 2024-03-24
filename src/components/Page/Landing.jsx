@@ -18,15 +18,17 @@ const Landing = () => {
           <Sidebar/>
         </div>
 <div className="flex flex-col">
-  
-        <div className="flex">
-          <div className="bg-gray-200 h-52">
-            <span>Total Merchants</span>
+
+        <div className="flex m-8">
+
+          <div className="bg-gray-200 h-60 p-6 rounded-lg">
+            <span className="text-2xl font-semibold">Total Merchants</span>
             <img src={user} alt="user" />
             <span>100</span>
           </div>
 
           <div className="bg-gray-200 flex ">
+            <div>
             <div>
               <h1>Merchant Status</h1>
               <img className="h-40" src={image} alt="" />
@@ -41,12 +43,13 @@ const Landing = () => {
                 <h1>10</h1>
               </span>
             </div>
+            </div>
             <img className="h-64" src={pie} alt="" />
           </div>
 
         </div>
 
-        <div className="border-4">
+        <div className="border-8 rounded-lg">
           <h1>Merchant Maker Checker Status</h1>
 
           <div className="flex">

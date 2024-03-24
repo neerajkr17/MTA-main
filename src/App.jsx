@@ -15,11 +15,21 @@ function App() {
       <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />} />
+
               <Route path="/landing" element={<Landing/>} />
-              <Route path="/merchant-opening" element={<Opening />} />
+
+              <Route path="/merchant-addition" element={<Opening />} />
               <Route path="/merchant-update" element={<Update />} />
+
               <Route path="/merchant-activitypage" element={<Activitypage />} />
               <Route path="/merchant-dashboard" element={<Dashboard/>} />
+              <Route path="/maker"/>
+
+              <Route path="/account-status-report"/>
+              <Route path="/commission-report"/>
+              <Route path="/merchant-detail-report"/>
+              <Route path="/real-time-report"/>
+              <Route path="/recon-report"/>
             </Routes>
       </BrowserRouter>
     </>
