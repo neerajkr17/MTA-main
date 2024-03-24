@@ -14,7 +14,7 @@ function Navbar() {
     }
 
   return (
-      <nav className="flex justify-between bg-[#dfd3e0] rounded-3xl m-2">
+      <nav className="flex justify-between bg-[#dfd3e0] rounded-3xl">
 
           <div className="logo m-4">
             <img src={logo} onClick={handleLanding} className=' h-16 w-auto rounded' href="#" alt='logo' />

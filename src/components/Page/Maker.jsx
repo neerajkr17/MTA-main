@@ -1,10 +1,60 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
+import { Search } from "lucide-react";
 
 const Maker = () => {
   return (
-    <div className="bg-gray-300 p-4 m-4 w-full mx-16 h-[calc(100vh-300px)]">
+    <div>
+      <Navbar />
+      <div className="flex">
+        <Sidebar />
+        <div className="table-container">
+          <h1 className="text-xl font-bold p-10 ml-6">
+            Maker-Checker Activity Search
+          </h1>
+
+          <div className="flex justify-between ">
+            <div className="ml-16">
+              <label htmlFor="activity">Activity ID :</label>
+              <input
+                type="text"
+                id="activity"
+                className="rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+              <button>
+                <Search />
+              </button>
+            </div>
+
+            <div>
+              <span>
+                <label htmlFor="activity">Form Date : </label>
+                <input
+                  type="date"
+                  id="activity"
+                  className="rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </span>
+
+              <span className="ml-4">
+                <label htmlFor="activity">To Date : </label>
+                <input
+                  type="date"
+                  id="activity"
+                  className="rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </span>
+
+              <button className="bg-sky-400 rounded-lg py-1.5 px-4 ml-2">
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-gray-300 p-4 m-4 w-full mx-16 h-[calc(100vh-300px)]">
             <h1 className="text-xl font-semibold ml-6 p-4">
-              Number of Activities in Maker Queue - 3
+              Number of Activities in Queue - 3
             </h1>
             <div className="bg-black h-1 m-1"></div>
 
@@ -121,7 +171,10 @@ const Maker = () => {
               </table>
             </div>
           </div>
-  )
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Maker

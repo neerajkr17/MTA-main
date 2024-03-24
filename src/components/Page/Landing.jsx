@@ -11,70 +11,70 @@ import pie from "../Assets/pie.png";
 const Landing = () => {
   
   return (
-    <div className="h-svh min-h-screen bg-gradient-to-bl from-blue-600 via-violet-600 to-red-400">
-      <Navbar />
+    <div className="h-svh min-h-screen bg-gradient-to-bl from-sky-400 via-sky-300 to-red-300">
+      <Navbar/>
       <div className="open-container flex">
         <div>
           <Sidebar/>
         </div>
-<div className="flex flex-col">
+<div className="flex flex-col ml-40">
 
         <div className="flex m-8">
 
-          <div className="bg-gray-200 h-60 p-6 rounded-lg">
+          <div className="bg-gray-200  p-6 rounded-lg m-8 text-center">
             <span className="text-2xl font-semibold">Total Merchants</span>
-            <img src={user} alt="user" />
-            <span>100</span>
+            <img className="ml-5 py-4" src={user} alt="user" />
+            <span className="text-2xl font-bold">100</span>
           </div>
 
-          <div className="bg-gray-200 flex ">
+          <div className="bg-gray-200 flex rounded-lg m-8 p-6">
             <div>
             <div>
-              <h1>Merchant Status</h1>
-              <img className="h-40" src={image} alt="" />
+              <h1 className="text-2xl font-bold text-center">Merchant Status</h1>
+              <img className="h-40 ml-20" src={image} alt="" />
             </div>
-            <div className="flex">
-              <span>
-                <h1>Active Merchants</h1>
-                <h1>90</h1>
+            <div className="flex p-2 m-2">
+              <span className="mr-4">
+                <h1 className="text-green-600 text-center font-semibold">Active Merchants</h1>
+                <h1 className="text-green-600 text-center font-bold">90</h1>
               </span>
               <span>
-                <h1>In Active Merchants</h1>
-                <h1>10</h1>
+                <h1 className="text-red-600 text-center font-semibold">In Active Merchants</h1>
+                <h1 className="text-red-600 text-center font-bold">10</h1>
               </span>
             </div>
             </div>
-            <img className="h-64" src={pie} alt="" />
+            <img className="h-60" src={pie} alt="" />
           </div>
 
         </div>
 
-        <div className="border-8 rounded-lg">
-          <h1>Merchant Maker Checker Status</h1>
+        <div className="border-4 rounded-lg p-4">
+          <h1 className="text-center text-3xl font-bold py-2">Merchant Maker Checker Status</h1>
 
           <div className="flex">
-            <div className="border-2 border-black rounded-md">
-              <div>Maker</div>
-              <div>Request</div>
-              <div>3</div>
+            <div className="border-2 bg-sky-100	 border-black rounded-md m-2">
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Maker</div>
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Request</div>
+              <div className="text-2xl text-center text-sky-800 font-semibold px-4 mt-3">3</div>
             </div>
 
-            <div className="border-2 border-black rounded-md" >
-              <div>Checker</div>
-              <div>Pending</div>
-              <div>3</div>
+            <div className="border-2 bg-orange-100 border-black rounded-md m-2" >
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Checker</div>
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Pending</div>
+              <div className="text-2xl text-center text-orange-800 font-semibold px-4 mt-3">3</div>
             </div>
 
-            <div className="border-2 border-black rounded-md" >
-              <div>Checker</div>
-              <div>Approved</div>
-              <div>3</div>
+            <div className="border-2 bg-green-100 border-black rounded-md m-2" >
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Checker</div>
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Approved</div>
+              <div className="text-2xl text-center text-green-800 font-semibold px-4 mt-3">3</div>
             </div>
 
-            <div className="border-2 border-black rounded-md" >
-              <div>Checker</div>
-              <div>Rejected</div>
-              <div>3</div>
+            <div className="border-2 bg-red-100 border-black rounded-md m-2" >
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Checker</div>
+              <div className="text-2xl text-center text-blue-800 font-semibold px-4">Rejected</div>
+              <div className="text-2xl text-center text-red-800 font-semibold px-4 mt-3">3</div>
             </div>
           </div>
 

@@ -3,11 +3,11 @@ import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import { Search } from "lucide-react";
 
-function Activitypage() {
+function Makercheckerstatus() {
   return (
     <div>
       <Navbar />
-      <div className="Activitypage-container flex">
+      <div className="flex">
         <Sidebar />
         <div className="table-container">
           <h1 className="text-xl font-bold p-10 ml-6">
@@ -177,4 +177,4 @@ function Activitypage() {
   );
 }
 
-export default Activitypage;
+export default Makercheckerstatus;

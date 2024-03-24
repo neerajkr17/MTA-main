@@ -187,7 +187,7 @@ const Sidebar = () => {
                 </span>
               </span>
               {activeItem === index && isOpen && (
-                <ul className="pl-4 mt-2">
+                <ul className="pl-4 mt-2 bg-white" >
                   {item.subItems.map((subItem, subIndex) => (
                     <li
                       key={subIndex}
