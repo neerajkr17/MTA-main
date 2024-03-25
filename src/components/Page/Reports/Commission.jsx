@@ -28,14 +28,14 @@ const Commission = () => {
         <table className="table-auto w-full">
           <thead>
             <tr>
-              <th className="px-4 py-2">Date</th>
-              <th className="px-4 py-2">CIF Number</th>
-              <th className="px-4 py-2">Account No</th>
-              <th className="px-4 py-2">User Class</th>
-              <th className="px-4 py-2">Transaction Type</th>
-              <th className="px-4 py-2">Gross Commission</th>
-              <th className="px-4 py-2">TDS Deducted</th>
-              <th className="px-4 py-2">Net Commission</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Date</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">CIF Number</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Account No</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">User Class</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Transaction Type</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Gross Commission</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">TDS Deducted</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Net Commission</th>
             </tr>
           </thead>
           <tbody>

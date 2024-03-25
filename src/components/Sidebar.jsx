@@ -121,8 +121,8 @@ const Sidebar = () => {
       icon: "🏭",
       color: "bg-gradient-to-r from-red-600 to-blue-600 text-white",
       subItems: [
-        { label: "Merchant Addition", path: "/merchant-addition", color: "text-red-500" },
-        { label: "Merchant Update", path: "/merchant-update", color: "text-red-500"},
+        { label: "Merchant Addition", path: "/merchant-addition", color: "text-blue-600" },
+        { label: "Merchant Update", path: "/merchant-update-search", color: "text-blue-600"},
       ],
     },
 
@@ -131,10 +131,10 @@ const Sidebar = () => {
       icon: "✅",
       color: "bg-gradient-to-r from-red-600 to-blue-600 text-white",
       subItems: [
-        { label: "Maker", path: "/maker", color: "text-blue-500" },
-        { label: "Checker", path: "/checker", color: "text-blue-500" },
-        { label: "Maker Checker Status", path: "/maker-checker-status", color: "text-red-500" },
-        { label: "Maker Checker Dashboard", path: "/maker-checker-dashboard", color: "text-red-500"},
+        { label: "Maker", path: "/maker", color: "text-blue-600" },
+        { label: "Checker", path: "/checker", color: "text-blue-600" },
+        { label: "Maker Checker Status", path: "/maker-checker-status", color: "text-blue-600" },
+        { label: "Maker Checker Dashboard", path: "/maker-checker-dashboard", color: "text-blue-600"},
       ],
     },
     
@@ -143,11 +143,11 @@ const Sidebar = () => {
       icon: "📊",
       color: "bg-gradient-to-r from-red-600 to-blue-600 text-white",
       subItems: [
-        { label: "Account Status Report", path: "/account-status-report", color: "text-purple-500" },
-        { label: "Commission Report", path: "/commission-report", color: "text-purple-500" },
-        { label: "Merchant Detail Report", path: "/merchant-detail-report", color: "text-purple-500" },
-        { label: "Real Time Report", path: "/real-time-report", color: "text-purple-500" },
-        { label: "Recon Report", path: "/recon-report", color: "text-purple-500" },
+        { label: "Account Status Report", path: "/account-status-report", color: "text-blue-600" },
+        { label: "Commission Report", path: "/commission-report", color: "text-blue-600" },
+        { label: "Merchant Detail Report", path: "/merchant-detail-report", color: "text-blue-600" },
+        { label: "Real Time Report", path: "/real-time-report", color: "text-blue-600" },
+        { label: "Recon Report", path: "/recon-report", color: "text-blue-600" },
       ],
     },
   ];
@@ -157,9 +157,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex mt-2">
       <div
-        className={`bg-gray-500 rounded-md mx-4  text-white h-[calc(100vh-120px)] ${
+        className={`bg-gray-400 rounded-md mx-2  text-white h-[calc(100vh-120px)] ${
           isOpen ? "w-64" : "w-20"
         } duration-500 relative`}
       >
@@ -181,17 +181,17 @@ const Sidebar = () => {
                 className={`flex items-center cursor-pointer py-2 px-3 rounded-md ${item.color}`}
                 onClick={() => toggleSubItems(index)}
               >
-                <span className="mr-2">{item.icon}</span>
+                <span onClick={toggleSidebar} className="mr-2">{item.icon}</span>
                 <span className={`text-sm font-medium ${!isOpen && "hidden"}`}>
                   {item.label}
                 </span>
               </span>
               {activeItem === index && isOpen && (
-                <ul className="pl-4 mt-2 bg-white" >
+                <ul className="pl-4 mt-2 bg-white p-1" >
                   {item.subItems.map((subItem, subIndex) => (
                     <li
                       key={subIndex}
-                      className={`text-sm cursor-pointer flex items-center py-1 px-2 rounded-md ${subItem.color}`}
+                      className={`text-sm cursor-pointer flex items-center py-1 px-2 hover:bg-gradient-to-r from-red-200 to-blue-200  ${subItem.color}`}
                       onClick={() => handleSubItemClick(subItem.path)}
                     >
                       <span className="mr-2">&#9679;</span> {subItem.label}

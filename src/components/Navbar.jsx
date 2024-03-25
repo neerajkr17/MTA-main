@@ -13,6 +13,10 @@ function Navbar() {
         navigate('/landing');
     }
 
+    function handleLogout() {
+      navigate('/');
+    }
+
   return (
       <nav className="flex justify-between bg-[#dfd3e0] rounded-3xl">
 
@@ -29,7 +33,7 @@ function Navbar() {
           </div>
 
           <div className='container-3 m-8 '>
-            <button className='text-black bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded-2xl text-lg' type="submit">Log Out</button>
+            <button onClick={handleLogout} className='text-black bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded-2xl text-lg' type="submit">Log Out</button>
           </div>
 
     </nav>

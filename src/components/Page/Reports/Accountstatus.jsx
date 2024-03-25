@@ -33,15 +33,15 @@ const Accountstatus = () => {
         <table className="table-auto w-full">
           <thead>
             <tr>
-              <th className="px-4 py-2">Activity ID</th>
-              <th className="px-4 py-2">Customer ID</th>
-              <th className="px-4 py-2">Customer Name</th>
-              <th className="px-4 py-2">Account No.</th>
-              <th className="px-4 py-2">Status</th>
-              <th className="px-4 py-2">Maker ID</th>
-              <th className="px-4 py-2">Created On</th>
-              <th className="px-4 py-2">Checker ID</th>
-              <th className="px-4 py-2">Updated On</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Activity ID</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Customer ID</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Customer Name</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Account No.</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Status</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Maker ID</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Created On</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Checker ID</th>
+              <th className="px-4 py-2 bg-[#dfd3e0]">Updated On</th>
             </tr>
           </thead>
           <tbody>
