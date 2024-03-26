@@ -28,6 +28,8 @@ function App() {
 
               <Route path="/merchant-addition" element={<Opening />} />
               <Route path="/merchant-update-search" element={<Searchpage/>} />
+              {/* <Route path="/merchant-update-search" element={<Update/>} /> */}
+
 
               <Route path="/maker" element={<Maker/>} />
               <Route path="/checker" element={<Checker/>}/>

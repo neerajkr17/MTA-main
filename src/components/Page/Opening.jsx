@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
-import Modal from "./Modal";
+import Openingstatus from "./Openingstatus";
 
 const Opening = () => {
   const [accountType, setAccountType] = useState("Current Account");
@@ -14,7 +14,7 @@ const Opening = () => {
   const [gstin, setGstin] = useState("");
   const [accountNumber, setAccountNumber] = useState("");
 
-  const [showModal, setShowModal] = useState(false);
+  const [showOpeningstatus, setShowOpeningstatus] = useState(false);
 
 
   const handleSubmit = async (e) => {
@@ -196,7 +196,7 @@ const Opening = () => {
           <div className="m-4 p-8 space-x-80 ml-96">
             <button
               className="text-black bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded-xl text-lg"
-              // onClick={() => setShowModal(true)}
+              // onClick={() => setShowOpeningstatus(true)}
               onClick={handleSubmit}
             >
               Submit
@@ -208,7 +208,7 @@ const Opening = () => {
           </div>
         </div>
       </div>
-      {showModal && <Modal onClose={()=> setShowModal(false)}/>}
+      {showOpeningstatus && <Openingstatus onClose={()=> setShowOpeningstatus(false)}/>}
     </div>
   );
 };

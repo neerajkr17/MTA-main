@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Modal = ({onClose}) => {
+const Openingstatus = ({onClose}) => {
 
   return (
     <div className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
@@ -12,4 +12,4 @@ const Modal = ({onClose}) => {
   )
 }
 
-export default Modal
+export default Openingstatus;
