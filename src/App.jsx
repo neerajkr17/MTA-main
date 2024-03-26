@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Opening from "./components/Page/Opening";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Update from "./components/Page/Update";
+import Update from "./components/Page/Update";
 import Makercheckerstatus from "./components/Page/Makercheckerstatus";
 import Dashboard from "./components/Page/Dashboard";
 import Login from "./components/Login";
@@ -15,6 +15,7 @@ import Merchantdetail from './components/Page/Reports/Merchantdetail';
 import Realtime from './components/Page/Reports/Realtime';
 import Recon from './components/Page/Reports/Recon';
 import Searchpage from './components/Page/Searchpage';
+import Changehistory from './components/Page/Changehistory';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
               <Route path="/merchant-addition" element={<Opening />} />
               <Route path="/merchant-update-search" element={<Searchpage/>} />
-              {/* <Route path="/merchant-update-search" element={<Update/>} /> */}
+              <Route path="/merchant-update-change-history" element={<Changehistory/>} />
+              <Route path="/merchant-update" element={<Update/>} />
 
 
               <Route path="/maker" element={<Maker/>} />
