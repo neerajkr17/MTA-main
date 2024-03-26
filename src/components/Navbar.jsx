@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from './Assets/logo.png'
 
@@ -7,6 +7,25 @@ import logo from './Assets/logo.png'
 
 
 function Navbar() {
+
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const formattedTime = `${formatDigit(now.getDate())}/${formatDigit(now.getMonth() + 1)}/${now.getFullYear()} - ${formatDigit(now.getHours())}:${formatDigit(now.getMinutes())}:${formatDigit(now.getSeconds())}`;
+      setCurrentTime(formattedTime);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  
+  const formatDigit = (digit) => {
+    return digit < 10 ? `0${digit}` : digit;
+  };
+
+
   const navigate = useNavigate();
 
     function handleLanding() {
@@ -29,7 +48,7 @@ function Navbar() {
           </div>
 
           <div className="container-2 m-8">
-            <span>17/03/2024</span>
+            <span>{currentTime}</span>
           </div>
 
           <div className='container-3 m-8 '>

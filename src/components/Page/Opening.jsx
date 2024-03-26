@@ -64,6 +64,7 @@ const Opening = () => {
       console.error("Error creating account:", error.message);
       // Handle error, display a message to the user, or perform other error handling logic
     }
+    setShowOpeningstatus(true)
   };
 
   return (
@@ -75,7 +76,7 @@ const Opening = () => {
         </div>
 
         <div className="Opening-page">
-          <div className="toparea flex m-4 p-8 space-x-20 ml-20">
+          {/* <div className="toparea flex m-4 p-8 space-x-20 ml-20">
             <div className=" flex">
               <label className="w-[25ch] mr-10" htmlFor="accountNumber">Account Number : </label>
               <input
@@ -99,11 +100,21 @@ const Opening = () => {
                 <option value="Savings">Savings</option>
               </select>
             </div>
-          </div>
+          </div> */}
 
-          <div className="midareapage-opening flex m-4 p-6 space-x-20 ml-20">
+          <div className="midareapage-opening flex m-4 p-10 space-x-20 ml-20">
 
             <div className="left">
+
+            <div className=" flex p-2">
+              <label className="w-[25ch] mr-10" htmlFor="accountNumber">Account Number : </label>
+              <input
+                type="text"
+                id="accountNumber"
+                className=" block w-full rounded-md border-0 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                onChange={(e) => setAccountNumber(e.target.value)}
+              />
+            </div>
 
               <div className="content flex p-2">
               
@@ -159,6 +170,18 @@ const Opening = () => {
             </div>
 
             <div className="right">
+            <div className="space-x-16 p-2">
+              <label className="w-[22ch]" htmlFor="accountType">Account Type : </label>
+              <select
+                className="py-2 px-20"
+                id="accountType"
+                value={accountType}
+                onChange={(e) => setAccountType(e.target.value)}
+              >
+                <option value="Current Account">Current Account</option>
+                <option value="Savings">Saving Account</option>
+              </select>
+            </div>
 
               <div className="content flex p-2">
                 <label className="w-[25ch] mr-10" htmlFor="panNumber">PAN Number : </label>
